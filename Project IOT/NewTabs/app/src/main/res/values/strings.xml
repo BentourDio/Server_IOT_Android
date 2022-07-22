@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">NewTabs</string>
+    <string name="tab_text_1">sensor1</string>
+    <string name="tab_text_2">sensor2</string>
+    <string name="max">Max:</string>
+    <string name="min">Min:</string>
+    <string name="set">Set</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="spinner_names">
+        <item>37.96809452684323,23.76630586399502</item>
+        <item>37.96799937191987,23.766603589104385</item>
+        <item>37.967779456380754,23.767174897611685</item>
+        <item>37.96790421900921,23.76626294807113</item>
+    </string-array>
+
+    <string-array name="sensorTypes">
+        <item>Smoke</item>
+        <item>Gas</item>
+        <item>Temperature</item>
+        <item>UV</item>
+    </string-array>
+
+</resources>

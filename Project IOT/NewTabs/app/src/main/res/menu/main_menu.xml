@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:id="@+id/action_Settings"
+        app:showAsAction="never"
+        />
+    <item android:title="Send Position"
+        android:icon="@drawable/ic_baseline_gps_fixed_24"
+        android:id="@+id/action_SendPosition"
+        app:showAsAction="never">
+
+        <menu>
+
+            <item android:id="@+id/subitem1"
+                android:title="Automatic"
+                app:showAsAction="never"/>
+
+
+            <item android:id="@+id/subitem2"
+                android:title="Manual"
+                app:showAsAction="never"/>
+
+
+        </menu>
+
+    </item>
+
+    <item android:title="Add Sensor"
+        android:icon="@drawable/ic_baseline_add_circle_24"
+        android:id="@+id/action_AddSensor"
+        app:showAsAction="never"
+        />
+
+    <item android:title="Logout"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:id="@+id/action_Logout"
+        app:showAsAction="never"
+        />
+
+</menu>

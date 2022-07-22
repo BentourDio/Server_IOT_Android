@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Option3">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_tab"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Add Tab"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sensorSelect"
+        android:text="Select Sensor"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/add_tab"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/conf"
+        android:gravity="center"
+        android:text="Configure New Sensor"
+        android:layout_marginTop="250dp"
+        android:textSize="30dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sensor"
+        android:layout_below="@id/sensorSelect"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/min"
+        android:hint="Min:"
+        android:textSize="16dp"
+        android:layout_below="@+id/conf"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="250dp"
+        android:inputType="number|numberDecimal"
+        android:digits="0123456789.-"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/max"
+        android:hint="Max:"
+        android:textSize="16dp"
+        android:layout_below="@+id/min"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="250dp"
+        android:inputType="number|numberDecimal"
+        android:digits="0123456789.-"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/set"
+        android:text="Set"
+        android:textStyle="bold"
+        android:layout_below="@+id/max"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>
